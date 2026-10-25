@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  test-service:
+    build:
+      context: ./test-service
+      dockerfile: Dockerfile
+    container_name: pulseops-test-service
+    ports:
+      - "8001:8001"
+    restart: always
